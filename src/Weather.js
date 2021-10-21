@@ -1,11 +1,12 @@
 import React from "react"
 import ReactAnimatedWeather from "react-animated-weather";
 import ForcastDay from "./ForcstDay";
+import axios from "axios";
 
 import "./weather.css"
 
 export default function Weather() {
-    return (
+  return (
       <div className="weather">
         <form>
           <div className="row">
