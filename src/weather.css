@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+}
+form {
+    text-align: center;
+}
+h2 {
+    font-size: 35px;
+    margin-top: 25px;
+}
+h3 {
+    font-size: 20px;
+}
+ul {
+list-style: none;
+}
+.weather {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.deg {
+    font-size: 60px;
+}
+.des {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.day {
+    text-align: center;
+}
