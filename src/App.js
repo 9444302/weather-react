@@ -6,12 +6,19 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Weather />
-      <div className="source-code"><a
-        href="https://github.com/9444302/weather-react"
-        target="_blank"
-        rel="noreferrer"
-      >Open source code</a> by Tori</div>
+      <div className="container">
+        <Weather />
+        <div className="source-code">
+          <a
+            href="https://github.com/9444302/weather-react"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open source code
+          </a>{" "}
+          by Tori
+        </div>
+      </div>
     </div>
   );
 }
