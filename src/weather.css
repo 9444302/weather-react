@@ -33,6 +33,9 @@ margin-top: 15px;
 .main {
     margin-bottom: 20px;
 }
+.icon {
+    display: inline;
+}
 @media (max-width:576px) {
     h2, h3 {
         text-align: center;
@@ -44,6 +47,8 @@ margin-top: 15px;
     ul {
         margin-left: 0px;
     }
-    
+    .icon {
+        display: block;
+    }
 
 }

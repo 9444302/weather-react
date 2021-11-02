@@ -27,7 +27,7 @@ return (
 <ReactAnimatedWeather
 icon={icons[props.code]}
 color={"blue"}
-size={50}
+size={props.size}
 animated={true}
  />
     </div>
