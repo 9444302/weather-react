@@ -1,60 +1,60 @@
 form {
-    text-align: center;
+  text-align: center;
 }
 h2 {
-    font-size: 35px;
-    margin-top: 25px;
+  font-size: 35px;
+  margin-top: 25px;
 }
 h3 {
-    font-size: 20px;
-    margin: 0;
+  font-size: 20px;
+  margin: 0;
 }
 ul {
-list-style: none;
-margin-top: 15px;
+  list-style: none;
+  margin-top: 15px;
 }
 .weather {
-    max-width: 500px;
-    margin: 20px auto 10px auto;
-    border: 1px solid grey;
-    border-radius: 5px;
-    padding: 20px;
+  max-width: 500px;
+  margin: 20px auto 10px auto;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 20px;
 }
 .deg {
-    font-size: 60px;
+  font-size: 60px;
 }
 .day {
-    text-align: center;
-   background-color: indianred;
-   border-radius: 5px;
-   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .2);
-   margin-top: 20px;
+  text-align: center;
+  background-color: indianred;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
 }
 .main {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .icon {
-    display: inline;
-    position: relative;
-    top: 5px;
+  display: inline;
+  position: relative;
+  top: 10px;
 }
 .conversion-links {
-    position: relative;
-    top: -29px;
-
+  position: relative;
+  top: -29px;
 }
-@media (max-width:576px) {
-    h2, h3 {
-        text-align: center;
-    }
-    .main {
-        text-align: center;
-        margin-top: 20px;
-    }
-    ul {
-        margin-left: 0px;
-    }
-    .icon {
-        display: block;
-    }
+@media (max-width: 576px) {
+  h2,
+  h3 {
+    text-align: center;
+  }
+  .main {
+    text-align: center;
+    margin-top: 20px;
+  }
+  ul {
+    margin-left: 0px;
+  }
+  .icon {
+    display: block;
+  }
 }

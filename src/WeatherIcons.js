@@ -13,23 +13,23 @@ export default function WeatherIcons(props) {
     "04n": "PARTLY_CLOUDY_NIGHT",
     "09d": "RAIN",
     "09n": "RAIN",
-    "010d": "RAIN",
-    "010n": "RAIN",
-    "011d": "RAIN",
-    "011n": "RAIN",
-    "013d": "SNOW",
-    "013n": "SNOW",
-    "050d": "FOG",
-    "050n": "FOG",
+    "10d": "RAIN",
+    "10n": "RAIN",
+    "11d": "RAIN",
+    "11n": "RAIN",
+    "13d": "SNOW",
+    "13n": "SNOW",
+    "50d": "FOG",
+    "50n": "FOG",
   };
-return (
+  return (
     <div className="icon">
-<ReactAnimatedWeather
-icon={icons[props.code]}
-color={"blue"}
-size={props.size}
-animated={true}
- />
+      <ReactAnimatedWeather
+        icon={icons[props.code]}
+        color={"blue"}
+        size={props.size}
+        animated={true}
+      />
     </div>
-)
+  );
 }
