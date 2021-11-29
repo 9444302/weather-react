@@ -35,6 +35,13 @@ margin-top: 15px;
 }
 .icon {
     display: inline;
+    position: relative;
+    top: 5px;
+}
+.conversion-links {
+    position: relative;
+    top: -29px;
+
 }
 @media (max-width:576px) {
     h2, h3 {
@@ -50,5 +57,4 @@ margin-top: 15px;
     .icon {
         display: block;
     }
-
 }
