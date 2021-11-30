@@ -1,0 +1,11 @@
+.day .icon {
+    display: block;
+}
+.forcast-temp{
+    display: block;
+}
+@media (max-width: 576px) {
+    .forcast-temp{
+        display: inline;
+    }
+}
