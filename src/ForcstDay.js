@@ -16,11 +16,25 @@ export default function ForcastDay(props) {
 let min = Math.round(props.data.temp.min);
 return `${min}°`
   }
+  if (props.unit === "fahr"){
   return (
     <div className="day">
       <div>{day()}</div>
       <WeatherIcons code={props.data.weather[0].icon} size={30} />
       <span className="forcast-temp"><strong>{maxTemp()}</strong></span> <span className="forcast-temp">{minTemp()}</span>
     </div>
-  );
+  );} else {
+    return (
+      <div className="day">
+        <div>{day()}</div>
+        <WeatherIcons code={props.data.weather[0].icon} size={30} />
+        <span className="forcast-temp">
+          <strong>{Math.round(((props.data.temp.max - 32) * 5) / 9)}°</strong>
+        </span>{" "}
+        <span className="forcast-temp">
+          {Math.round(((props.data.temp.min - 32) * 5) / 9)}°
+        </span>
+      </div>
+    );
+  }
 }

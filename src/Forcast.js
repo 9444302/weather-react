@@ -32,7 +32,7 @@ setLoaded(true);
               if (index < 6) {
                   return(
               <div className="col-6 col-sm-2" key={index}>
-          <ForcastDay data={dailyForcast}/>
+          <ForcastDay data={dailyForcast} unit={props.unit}/>
         </div>
           );
         } else {
