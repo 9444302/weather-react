@@ -1,10 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function WeatherTemp(props) {
-
-  function celcius() {
-    return ((props.fahr - 32) * 5) / 9;
-  }
 
   if (props.unit === "fahr") {
     return (

@@ -11,7 +11,6 @@ export default function Weather() {
   const [unit, setUnit] = useState("fahr");
 
   function getWeather(response) {
-    console.log(response);
     setWeather({
       ready: true,
       cityName: response.data.name,
@@ -27,12 +26,10 @@ export default function Weather() {
   function handleCel(event) {
     event.preventDefault();
     setUnit("cel");
-    console.log(unit);
   }
   function handleFahr(event) {
     event.preventDefault();
     setUnit("fahr");
-    console.log(unit);
   }
 
   function handleSubmit(event) {
@@ -56,15 +53,15 @@ export default function Weather() {
                 <input
                   type="search"
                   placeholder="Search"
-                  className="w-100"
+                  className="w-100 text-box"
                   onChange={updateCity}
                 />
               </div>
               <div className="col-4">
-                <input type="submit" value="Search" className="w-100" />
+                <input type="submit" value="Search" className="w-100 buttons" />
               </div>
               <div className="col-2">
-                <button onClick={handleCel}>°C</button>
+                <button className="buttons" onClick={handleCel}>°F</button>
               </div>
             </div>
           </form>
@@ -87,10 +84,16 @@ export default function Weather() {
                 />
               </div>
               <div className="col-4">
-                <input type="submit" value="Search" className="w-100" />
+                <input
+                  type="submit"
+                  value="Search"
+                  className="w-100 buttons"
+                />
               </div>
               <div className="col-2">
-                <button onClick={handleFahr}>°F</button>
+                <button className="buttons" onClick={handleFahr}>
+                  °C
+                </button>
               </div>
             </div>
           </form>

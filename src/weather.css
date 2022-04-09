@@ -16,16 +16,18 @@ ul {
 .weather {
   max-width: 500px;
   margin: 20px auto 10px auto;
-  border: 1px solid grey;
+  border: 1px solid #1f363d;
   border-radius: 5px;
   padding: 20px;
 }
 .deg {
   font-size: 60px;
+  color: #1f363d;
 }
 .day {
   text-align: center;
-  background-color: indianred;
+  color: #1f363d;
+  background-color: #5396aa;
   border-radius: 5px;
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
   margin-top: 20px;
@@ -42,10 +44,25 @@ ul {
   position: relative;
   top: -29px;
 }
+  .buttons {
+    background-color: #5396aa;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #1f363d;
+  }
+  .text-box {
+    background-color: rgb(197, 208, 231);
+    border: none;
+    border-radius: 5px;
+    color: #1f363d;
+    padding: 5px 10px;
+  }
 @media (max-width: 576px) {
   h2,
   h3 {
     text-align: center;
+    color: #1f363d;
   }
   .main {
     text-align: center;
@@ -57,4 +74,5 @@ ul {
   .icon {
     display: block;
   }
+
 }
